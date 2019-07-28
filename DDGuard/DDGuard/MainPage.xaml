@@ -26,9 +26,9 @@
             <Button Grid.Column="1" Grid.Row="1" x:Name="AnxiousButton" Text="😨 Anxious" FontSize="35" TextColor="White" BackgroundColor="Red" Clicked="AnxientButton_Clicked"/>
         </Grid>
      
-        <Button x:Name="ReportButton" BackgroundColor="Blue" Text="Report" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+        <Button x:Name="ReportButton" BackgroundColor="Blue" Text="Report" FontSize="37" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
              Clicked="ReportButton_Clicked"   />
-        <Button x:Name="SiteButton" BackgroundColor="Blue" Text="Browse for Relaxation" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+        <Button x:Name="SiteButton" BackgroundColor="Blue" Text="Browse for Relaxation" FontSize="37" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
               Clicked="SiteButton_Clicked"  />
 
     </StackLayout>
