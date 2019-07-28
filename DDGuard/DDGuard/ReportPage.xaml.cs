@@ -55,21 +55,5 @@ namespace DDGuard
             await TextToSpeech.SpeakAsync(AnxientButton.Text);
         }
 
-
-
-#region other
-        //Reportpage()
-        //Xamarin.Essentials: AppInfo
-        //AppNameLabel.Text += " " + AppInfo.Name;
-        //AppPackageLabel.Text += " " + AppInfo.PackageName;
-        //AppVersionLabel.Text += " " + AppInfo.VersionString;
-        //AppBuildLabel.Text += " " + AppInfo.BuildString;
-
-        ////Xamarin.Essentials: DeviceInfo
-        //DeviceModelLabel.Text += " " + DeviceInfo.Model;
-        //DeviceManufacturerLabel.Text += " " + DeviceInfo.Manufacturer;
-        //DevicePlatformLabel.Text += " " + DeviceInfo.Platform;
-        //DeviceOSLabel.Text += " " + DeviceInfo.VersionString;
-#endregion
     }
 }

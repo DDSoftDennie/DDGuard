@@ -6,8 +6,7 @@
              Title="DDGuard">
 
     <StackLayout VerticalOptions="FillAndExpand" Margin="10">
-    <!--   <Label Text="Battery:" FontSize="Large"/>
-       <ProgressBar x:Name="BatteryProgressBar" VerticalOptions="FillAndExpand" HeightRequest="40" Progress="100"/>-->
+
        <Button x:Name="NoConnectionButton" BackgroundColor="Red" Text="Error: No Internet!" TextColor="White" HorizontalOptions="FillAndExpand" IsVisible="False"
           Clicked="NoConnectionButton_Clicked"     />
 

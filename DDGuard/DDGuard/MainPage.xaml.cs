@@ -14,8 +14,7 @@ namespace DDGuard
    // [DesignTimeVisible(true)]
     public partial class MainPage : ContentPage
     {
-        // Set speed delay for monitoring changes.
-
+       
         public MainPage()
         {
             InitializeComponent();
@@ -94,51 +93,6 @@ namespace DDGuard
             //Xamarin.Essentials: Preferences
             Preferences.Set("Anxient", Statics.Anger);
         }
-
-        #region Other
-
-        ////Mainpage()
-        //Xamarin.Essentials: Battery
-        //PERMISSIONS: BATTERY_STATS
-        //double dBattery = Battery.ChargeLevel;
-        //BatteryProgressBar.Progress = dBattery;
-
-        //if(dBattery <= 0.20)
-        //{
-        //    BatteryProgressBar.ProgressColor = Color.Red;
-        //    SpeakBattery();
-        //} else if(dBattery <=0.35)
-        //{
-        //    BatteryProgressBar.ProgressColor = Color.Orange;
-        //} else {
-        //    BatteryProgressBar.ProgressColor = Color.Green;
-        //}
-
-
-        //private async void SpeakBattery()
-        //{
-        //    //Xamarin.Essentials: Text To Speech
-        //    await TextToSpeech.SpeakAsync("Warning, low battery");
-        //}
-
-
-        private void OtherNiceFunctions()
-        {
-            // there are other nice functions
-            // but for following functions you need to have a real device
-             Flashlight.TurnOnAsync();
-            Flashlight.TurnOffAsync();
-        }
-
-       
-
-        void Accelerometer_ShakeDetected(object sender, EventArgs e)
-        {
-            // Process shake event
-        }
-
-        #endregion 
-    
 
 
     }
