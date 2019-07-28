@@ -18,21 +18,10 @@ namespace DDGuard
             this.Title = "DDGuard Report";
             InitializeComponent();
 
-            //Xamarin.Essentials: AppInfo
-            AppNameLabel.Text += " " + AppInfo.Name;
-            AppPackageLabel.Text += " " + AppInfo.PackageName;
-            AppVersionLabel.Text += " " + AppInfo.VersionString;
-            AppBuildLabel.Text += " " + AppInfo.BuildString;
-
-            //Xamarin.Essentials: DeviceInfo
-            DeviceModelLabel.Text += " " + DeviceInfo.Model;
-            DeviceManufacturerLabel.Text += " " + DeviceInfo.Manufacturer;
-            DevicePlatformLabel.Text += " " + DeviceInfo.Platform;
-            DeviceOSLabel.Text += " " + DeviceInfo.VersionString;
-
             HappyButton.Text = "I was " + Statics.Happy + " times happy.";
             SadButton.Text = "I was " + Statics.Sad + " times sad.";
-            CrisisButton.Text = "I was " + Statics.Crisis + " times in crisis.";
+            AngerButton.Text = "I was " + Statics.Anger + " times anger.";
+            AnxientButton.Text = "I was " + Statics.Anxient + " times anxient.";
 
          
         }
@@ -54,10 +43,33 @@ namespace DDGuard
             await TextToSpeech.SpeakAsync(SadButton.Text);
         }
 
-        private async void CrisisButton_Clicked(object sender, EventArgs e)
+        private async void AngerButton_Clicked(object sender, EventArgs e)
         {
             //Xamarin.Essentials: Text To Speech
-            await TextToSpeech.SpeakAsync(CrisisButton.Text);
+            await TextToSpeech.SpeakAsync(AngerButton.Text);
         }
+
+        private async void AnxientButton_Clicked(object sender, EventArgs e)
+        {
+            //Xamarin.Essentials: Text To Speech
+            await TextToSpeech.SpeakAsync(AnxientButton.Text);
+        }
+
+
+
+#region other
+        //Reportpage()
+        //Xamarin.Essentials: AppInfo
+        //AppNameLabel.Text += " " + AppInfo.Name;
+        //AppPackageLabel.Text += " " + AppInfo.PackageName;
+        //AppVersionLabel.Text += " " + AppInfo.VersionString;
+        //AppBuildLabel.Text += " " + AppInfo.BuildString;
+
+        ////Xamarin.Essentials: DeviceInfo
+        //DeviceModelLabel.Text += " " + DeviceInfo.Model;
+        //DeviceManufacturerLabel.Text += " " + DeviceInfo.Manufacturer;
+        //DevicePlatformLabel.Text += " " + DeviceInfo.Platform;
+        //DeviceOSLabel.Text += " " + DeviceInfo.VersionString;
+#endregion
     }
 }

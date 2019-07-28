@@ -5,30 +5,31 @@
              x:Class="DDGuard.MainPage"
              Title="DDGuard">
 
-    <StackLayout VerticalOptions="StartAndExpand">
-       <Label Text="Battery:" FontSize="Large"/>
-       <ProgressBar x:Name="BatteryProgressBar" VerticalOptions="FillAndExpand" HeightRequest="40" Progress="100"/>
+    <StackLayout VerticalOptions="FillAndExpand" Margin="10">
+    <!--   <Label Text="Battery:" FontSize="Large"/>
+       <ProgressBar x:Name="BatteryProgressBar" VerticalOptions="FillAndExpand" HeightRequest="40" Progress="100"/>-->
        <Button x:Name="NoConnectionButton" BackgroundColor="Red" Text="Error: No Internet!" TextColor="White" HorizontalOptions="FillAndExpand" IsVisible="False"
           Clicked="NoConnectionButton_Clicked"     />
 
-        <Grid>
+        <Grid VerticalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="130" />
-                <RowDefinition Height="130"/>
-                <RowDefinition Height="130"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button x:Name="HappyButton" Text="😊 Happy" TextColor="White" FontSize="42" BackgroundColor="Green" Clicked="HappyButton_Clicked"/>
-            <Button Grid.Column="1" x:Name="SadButton" Text="😥 Sad" TextColor="White" FontSize="42" BackgroundColor="OrangeRed" Clicked="SadButton_Clicked"/>
-            <Button Grid.Row="1" x:Name="CriticButton" Text="😡 Anger" FontSize="42" TextColor="White" BackgroundColor="Red" Clicked="CriticButton_Clicked"/>
+            <Button x:Name="HappyButton" Text="😊 Happy" TextColor="White" FontSize="37" BackgroundColor="Green" Clicked="HappyButton_Clicked"/>
+            <!--Spaces in text SadButton are needed to place text below emoji-->
+            <Button Grid.Column="1" x:Name="SadButton" Text="😥       Sad" TextColor="White" FontSize="37" BackgroundColor="Red" Clicked="SadButton_Clicked"/>
+            <Button Grid.Row="1" x:Name="AngerButton" Text="😡 Anger" FontSize="37" TextColor="White" BackgroundColor="Red" Clicked="AngerButton_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="1" x:Name="AnxiousButton" Text="😨 Anxious" FontSize="35" TextColor="White" BackgroundColor="Red" Clicked="AnxientButton_Clicked"/>
         </Grid>
      
-        <Button x:Name="ReportButton" BackgroundColor="Blue" Text="Report" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+        <Button x:Name="ReportButton" BackgroundColor="Blue" Text="Report" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
              Clicked="ReportButton_Clicked"   />
-        <Button x:Name="SiteButton" BackgroundColor="Blue" Text="Browse for Relaxation" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+        <Button x:Name="SiteButton" BackgroundColor="Blue" Text="Browse for Relaxation" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
               Clicked="SiteButton_Clicked"  />
 
     </StackLayout>

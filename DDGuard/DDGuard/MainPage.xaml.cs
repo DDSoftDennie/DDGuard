@@ -24,32 +24,11 @@ namespace DDGuard
             //Xamarin.Essentials: Preferences
             Statics.Happy = Preferences.Get("Happy", 0);
             Statics.Sad = Preferences.Get("Sad", 0);
-            Statics.Crisis = Preferences.Get("Crisis", 0);
-
-            //Xamarin.Essentials: Battery
-            //PERMISSIONS: BATTERY_STATS
-            double dBattery = Battery.ChargeLevel;
-            BatteryProgressBar.Progress = dBattery;
-          
-            if(dBattery <= 0.20)
-            {
-                BatteryProgressBar.ProgressColor = Color.Red;
-                SpeakBattery();
-            } else if(dBattery <=0.35)
-            {
-                BatteryProgressBar.ProgressColor = Color.Orange;
-            } else {
-                BatteryProgressBar.ProgressColor = Color.Green;
-            }
-            
-           
+            Statics.Anger = Preferences.Get("Anger", 0);
+            Statics.Anxient = Preferences.Get("Anxient", 0);         
         }
 
-        private async void SpeakBattery()
-        {
-            //Xamarin.Essentials: Text To Speech
-            await TextToSpeech.SpeakAsync("Warning, low battery");
-        }
+    
         private async void SiteButton_Clicked(object sender, EventArgs e)
         {
             if(CheckInternetConnection() == true)
@@ -100,17 +79,50 @@ namespace DDGuard
             Preferences.Set("Sad", Statics.Sad);
         }
 
-        private void CriticButton_Clicked(object sender, EventArgs e)
+        private void AngerButton_Clicked(object sender, EventArgs e)
         {
 
-            Statics.Crisis++;
+            Statics.Anger++;
             //Xamarin.Essentials: Preferences
-            Preferences.Set("Crisis", Statics.Crisis);
+            Preferences.Set("Anger", Statics.Anger);
         }
 
+        private void AnxientButton_Clicked(object sender, EventArgs e)
+        {
+
+            Statics.Anxient++;
+            //Xamarin.Essentials: Preferences
+            Preferences.Set("Anxient", Statics.Anger);
+        }
 
         #region Other
-    private void OtherNiceFunctions()
+
+        ////Mainpage()
+        //Xamarin.Essentials: Battery
+        //PERMISSIONS: BATTERY_STATS
+        //double dBattery = Battery.ChargeLevel;
+        //BatteryProgressBar.Progress = dBattery;
+
+        //if(dBattery <= 0.20)
+        //{
+        //    BatteryProgressBar.ProgressColor = Color.Red;
+        //    SpeakBattery();
+        //} else if(dBattery <=0.35)
+        //{
+        //    BatteryProgressBar.ProgressColor = Color.Orange;
+        //} else {
+        //    BatteryProgressBar.ProgressColor = Color.Green;
+        //}
+
+
+        //private async void SpeakBattery()
+        //{
+        //    //Xamarin.Essentials: Text To Speech
+        //    await TextToSpeech.SpeakAsync("Warning, low battery");
+        //}
+
+
+        private void OtherNiceFunctions()
         {
             // there are other nice functions
             // but for following functions you need to have a real device
