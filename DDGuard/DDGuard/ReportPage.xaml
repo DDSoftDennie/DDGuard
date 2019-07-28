@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DDGuard.ReportPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label FontAttributes="Bold">Feelings:</Label>
+                <Button x:Name="HappyButton" BackgroundColor="Yellow" Text="Blue" Clicked="HappyButton_Clicked"/>
+                <Button x:Name="SadButton" BackgroundColor="Yellow" TextColor="Blue" Clicked="SadButton_Clicked"/>
+                <Button x:Name="CrisisButton" BackgroundColor="Yellow" TextColor="Blue" Clicked="CrisisButton_Clicked"/>
+
+                <Label FontAttributes="Bold">App info:</Label>
+                <Label x:Name="AppNameLabel">Name:</Label>
+                <Label x:Name="AppPackageLabel">Package Name:</Label>
+                <Label x:Name="AppVersionLabel">Version:</Label>
+                <Label x:Name="AppBuildLabel">Build:</Label>
+                <Label></Label>
+                <Label FontAttributes="Bold">Device info:</Label>
+                <Label x:Name="DeviceModelLabel">Model:</Label>
+                <Label x:Name="DeviceManufacturerLabel">Manufacturer:</Label>
+                <Label x:Name="DevicePlatformLabel">Platform:</Label>
+                <Label x:Name="DeviceOSLabel">OS:</Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
