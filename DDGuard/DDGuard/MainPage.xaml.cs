@@ -24,7 +24,7 @@ namespace DDGuard
             Statics.Happy = Preferences.Get("Happy", 0);
             Statics.Sad = Preferences.Get("Sad", 0);
             Statics.Anger = Preferences.Get("Anger", 0);
-            Statics.Anxient = Preferences.Get("Anxient", 0);         
+            Statics.Anxious = Preferences.Get("Anxious", 0);         
         }
 
     
@@ -86,12 +86,12 @@ namespace DDGuard
             Preferences.Set("Anger", Statics.Anger);
         }
 
-        private void AnxientButton_Clicked(object sender, EventArgs e)
+        private void AnxiousButton_Clicked(object sender, EventArgs e)
         {
 
-            Statics.Anxient++;
+            Statics.Anxious++;
             //Xamarin.Essentials: Preferences
-            Preferences.Set("Anxient", Statics.Anger);
+            Preferences.Set("Anxious", Statics.Anger);
         }
 
 

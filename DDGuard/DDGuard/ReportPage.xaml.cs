@@ -21,7 +21,7 @@ namespace DDGuard
             HappyButton.Text = "I was " + Statics.Happy + " times happy.";
             SadButton.Text = "I was " + Statics.Sad + " times sad.";
             AngerButton.Text = "I was " + Statics.Anger + " times anger.";
-            AnxientButton.Text = "I was " + Statics.Anxient + " times anxient.";
+            AnxiousButton.Text = "I was " + Statics.Anxious + " times anxious.";
 
          
         }
@@ -49,11 +49,12 @@ namespace DDGuard
             await TextToSpeech.SpeakAsync(AngerButton.Text);
         }
 
-        private async void AnxientButton_Clicked(object sender, EventArgs e)
-        {
-            //Xamarin.Essentials: Text To Speech
-            await TextToSpeech.SpeakAsync(AnxientButton.Text);
-        }
+ 
 
+        private async void AnxiousButton_Clicked(object sender, EventArgs e)
+        {
+        //Xamarin.Essentials: Text To Speech
+        await TextToSpeech.SpeakAsync(AnxiousButton.Text);
+        }
     }
 }

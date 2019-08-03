@@ -21,9 +21,9 @@
             </Grid.RowDefinitions>
             <Button x:Name="HappyButton" Text="😊 Happy" TextColor="White" FontSize="37" BackgroundColor="Green" Clicked="HappyButton_Clicked"/>
             <!--Spaces in text SadButton are needed to place text below emoji-->
-            <Button Grid.Column="1" x:Name="SadButton" Text="😥       Sad" TextColor="White" FontSize="37" BackgroundColor="Red" Clicked="SadButton_Clicked"/>
-            <Button Grid.Row="1" x:Name="AngerButton" Text="😡 Anger" FontSize="37" TextColor="White" BackgroundColor="Red" Clicked="AngerButton_Clicked"/>
-            <Button Grid.Column="1" Grid.Row="1" x:Name="AnxiousButton" Text="😨 Anxious" FontSize="35" TextColor="White" BackgroundColor="Red" Clicked="AnxientButton_Clicked"/>
+            <Button Grid.Row="0" Grid.Column="1" x:Name="SadButton" Text="😥       Sad" TextColor="White" FontSize="37" BackgroundColor="Red" Clicked="SadButton_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="0" x:Name="AngerButton" Text="😡 Anger" FontSize="37" TextColor="White" BackgroundColor="Red" Clicked="AngerButton_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="1" x:Name="AnxiousButton" Text="😨 Anxious" FontSize="35" TextColor="White" BackgroundColor="Red" Clicked="AnxiousButton_Clicked"/>
         </Grid>
      
         <Button x:Name="ReportButton" BackgroundColor="Blue" Text="Report" FontSize="37" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Start"

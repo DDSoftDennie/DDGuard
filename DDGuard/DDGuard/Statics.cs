@@ -9,6 +9,6 @@ namespace DDGuard
         public static int Happy;
         public static int Sad;
         public static int Anger;
-        public static int Anxient;
+        public static int Anxious;
     }
 }
