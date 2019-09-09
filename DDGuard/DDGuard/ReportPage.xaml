@@ -6,10 +6,10 @@
         <ScrollView>
             <StackLayout>
                 <Label FontAttributes="Bold">Feelings:</Label>
-                <Button x:Name="HappyButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" Clicked="HappyButton_Clicked"/>
-                <Button x:Name="SadButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" Clicked="SadButton_Clicked"/>
-                <Button x:Name="AngerButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" Clicked="AngerButton_Clicked"/>
-                <Button x:Name="AnxiousButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" Clicked="AnxiousButton_Clicked"/>
+                <Button x:Name="HappyButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" BorderColor="Blue" BorderWidth="5" Clicked="HappyButton_Clicked"/>
+                <Button x:Name="SadButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" BorderColor="Blue" BorderWidth="5" Clicked="SadButton_Clicked"/>
+                <Button x:Name="AngerButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" BorderColor="Blue" BorderWidth="5"  Clicked="AngerButton_Clicked"/>
+                <Button x:Name="AnxiousButton" BackgroundColor="Yellow" TextColor="Blue" FontSize="37" BorderColor="Blue" BorderWidth="5"  Clicked="AnxiousButton_Clicked"/>
                 </StackLayout>
         </ScrollView>
     </ContentPage.Content>

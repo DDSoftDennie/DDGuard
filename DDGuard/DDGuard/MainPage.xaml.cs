@@ -56,7 +56,7 @@ namespace DDGuard
 
         private async void NoConnectionButton_Clicked(object sender, EventArgs e)
         {
-          await TextToSpeech.SpeakAsync("Error: No internet aviable");
+          await TextToSpeech.SpeakAsync("Error: No internet available");
         }
 
         private async void ReportButton_Clicked(object sender, EventArgs e)
@@ -92,6 +92,7 @@ namespace DDGuard
             Statics.Anxious++;
             //Xamarin.Essentials: Preferences
             Preferences.Set("Anxious", Statics.Anger);
+            
         }
 
 
