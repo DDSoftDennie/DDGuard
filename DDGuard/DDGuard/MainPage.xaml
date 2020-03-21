@@ -15,15 +15,14 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="130" />
-                <RowDefinition Height="130"/>
-                <RowDefinition Height="130"/>
             </Grid.RowDefinitions>
-            <Button x:Name="HappyButton" Text="😊 Happy" TextColor="White" FontSize="42" BackgroundColor="Green" Clicked="HappyButton_Clicked"/>
-            <Button Grid.Column="1" x:Name="SadButton" Text="😥 Sad" TextColor="White" FontSize="42" BackgroundColor="OrangeRed" Clicked="SadButton_Clicked"/>
-            <Button Grid.Row="1" x:Name="CriticButton" Text="😡 Anger" FontSize="42" TextColor="White" BackgroundColor="Red" Clicked="CriticButton_Clicked"/>
+            <Button x:Name="HappyButton" Text="😊 Happy" TextColor="White" FontSize="30" BackgroundColor="Green" Clicked="HappyButton_Clicked"/>
+            <Button Grid.Column="1" x:Name="SadButton" Text="😥 Sad" TextColor="White" FontSize="30" BackgroundColor="OrangeRed" Clicked="SadButton_Clicked"/>
+            <Button Grid.Column="2" x:Name="CriticButton" Text="😡 Anger" FontSize="30" TextColor="White" BackgroundColor="Red" Clicked="CriticButton_Clicked"/>
         </Grid>
      
         <Button x:Name="ReportButton" BackgroundColor="Blue" Text="Report" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
